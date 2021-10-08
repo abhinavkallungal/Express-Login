@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+.login {
+  width: 100vw;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.login .card {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background-color: #e0e0e0;
+  -webkit-box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+          box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+  border-radius: 20px;
+}
+
+.login .card h3 {
+  padding: 5px 10px;
+  -webkit-box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+          box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  display: block;
+  width: 140px;
+  text-align: center;
+}
+
+.login .card form .form-data {
+  margin: 20px 0px;
+}
+
+.login .card form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login .card form input[type=text], .login .card form input[type=password] {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+          box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+}
+
+.login .card form input[type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  -webkit-box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+          box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+  border-radius: 20px;
+}
+
+.login .card form input[type=submit]:active {
+  -webkit-box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+          box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+}
+
+#hero {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#hero .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .row .img {
+  width: 100%;
+  height: auto;
+}
+
+#hero .row .img img {
+  width: 100%;
+  height: auto;
+}
+
+#hero .row .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#hero .row .btns .btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  -webkit-box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+          box-shadow: -6px 6px 12px #a4a4a4, 6px -6px 12px #ffffff;
+  border-radius: 20px;
+}
+
+#hero .row .btns .btn:active {
+  -webkit-box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+          box-shadow: inset -6px 6px 12px #a4a4a4, inset 6px -6px 12px #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

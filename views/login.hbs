@@ -1,0 +1,24 @@
+<div class="login row">
+    <div class="col-lg-5 col-md-9 col-11">
+        <div class="card">
+            <h3>LOGIN</h3>
+            <form action="/login" id="form" method="POST">
+                <div class="form-data">
+                    <label for="">User Name</label>
+                    <input type="text" name="uName" id="uName" placeholder="User Name">
+                </div>
+                <div class="form-data">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                {{#if loginError}}
+                <span id="message">Invalid Username Or Password</span>
+                {{/if}}
+                <div class="form-data">
+                    <input type="submit" value="LOGIN">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
