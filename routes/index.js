@@ -4,6 +4,56 @@ var router = express.Router();
 const username='abhinav';
 const password = 'abhinav';
 
+const cards=[
+  {
+    name:"food1",
+    price:300,
+    discription:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis.",
+    img:"images/one.jpeg"
+  },
+  {
+    name:"food2",
+    price:500,
+    discription:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis.",
+    img:"images/two.jpeg"
+  },
+  {
+    name:"food3",
+    price:350,
+    discription:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis.",
+    img:"images/three.jpeg"
+  }
+  
+]
+const name= [
+  "Abhinav",
+  "Asif",
+  "Ajmal",
+  "Mubasheer",
+  "faiz",
+  "afsal"
+]
+const details=[
+  {
+    name:'Abhinav',
+    age:21,
+    place:'Ramanatukara'
+
+  },
+  {
+    name:'Asif',
+    age:21,
+    place:'nilambur'
+
+  },
+  {
+    name:'Afsal',
+    age:21,
+    place:'Pandikadu'
+
+  }
+]
+
  let verify =(req,res,next)=>{
   res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');  
  
@@ -24,9 +74,7 @@ router.get('/', verify, function(req, res) {
 });
 router.get('/test', verify, function(req, res) {
   
-  res.render('index', { title: 'Home' });
-
-
+  res.render('test', { title: 'test' ,cards,name,details});
 });
 
 
